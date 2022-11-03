@@ -193,11 +193,14 @@ header .logo img{
   position: relative;
 }
 .mySlides {
+  border-radius: 20px;
   display: none;
   height: 500px;
 }
 .mySlides img{
   height: 100%;
+  border-radius: 20px;
+
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -243,19 +246,21 @@ header .logo img{
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* Six columns side by side */
+.row{
+  margin-right: 0;
+  --bs-gutter-x:0rem!important;
+  margin-left: 0;
+}
 .column {
   float: left;
   width: calc(100% / 10);
   border: 1px solid #fff;
   border-radius: 5px;
   height: 60px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .column img{
   height: 100%;
@@ -272,19 +277,14 @@ header .logo img{
 /* ===============  footer =============== */
 footer {
   padding-top: 20px; 
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-color: #232525;
   border-radius: 5px;
 }
-footer .content {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 30px;
+footer .contant{
+  padding: 15px 30px;
 }
-footer .content .logo {
-  width: 40%;
-}
-footer .content .logo p {
+footer .logo p {
   font-size: 14px;
   opacity: 78%;
   padding-right: 30px;
@@ -292,9 +292,7 @@ footer .content .logo p {
   color: #fff;
   margin-bottom: 0;
 }
-footer .links {
-  width: 20%;
-}
+
 footer .links .head {
   font-size: 20px;
   font-weight: bold;
@@ -347,15 +345,15 @@ footer .subscribtion p {
 }
 footer .icons {
   width: 90%;
-  display: flex;
   margin-top: 40px;
-  gap: 30px;
+
 }
 footer .icons svg {
   color: #fff;
   border: 1px solid #fff;
   font-size: 16px;
   padding: 10px;
+  margin: 10px;
   border-radius: 7px;
   cursor: pointer;
 }

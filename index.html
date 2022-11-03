@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="items mt-5 text-center">
+        <div class="container items mt-5 text-center">
           <div class="row">
             <div class="item">
               <a href="#">Fayoum 4.11.2022</a>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <!-- ================== slider ================= -->
-          <div class="slider container-fluid">
+          <div class=" slider container-fluid">
             <div class="mySlides">
               
                 <img src="imges/01.webp" class="img-fluid" style="width:100%">
@@ -137,7 +137,7 @@
             </div>
           
             <!-- Thumbnail images -->
-            <div class="">
+            <div class="imges">
               <div class="column">
                 <img class="demo cursor" src="imges/01.webp" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
               </div>
@@ -174,39 +174,47 @@
           <!-- ===== footer ====== -->
           <footer>
             <div class="container">
-              <div class="content">
-                <div class="logo">
-                  <img src="imges/مغامرة 2.png" alt="logo" style="width:200px;" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                    doloremque itaque nulla minima aliquid! Fuga, ipsum, repudiandae
-                    maiores tempore odit perferendis quos ea nulla praesentium soluta
-                    adipisci commodi explicabo? Dolores.
-                  </p>
+              <div class="contant row text-center justify-content-center align-items-center ">
+                <div class=" col-lg-5">
+                  <div class="logo">
+                    <div class=" text-center text-lg-start">
+                      <img src="imges/مغامرة 2.png" class="img-fluid " alt="logo" style="width:200px;" />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                      doloremque itaque nulla minima aliquid! Fuga, ipsum, repudiandae
+                      maiores tempore odit perferendis quos ea nulla praesentium soluta
+                      adipisci commodi explicabo? Dolores.
+                    </p>
+                  </div>
                 </div>
-                <ul class="links">
-                  <li class="head">Quick Links</li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Blogs</a></li>
-                  <li><a href="">Pricing</a></li>
-                  <li><a href="">Contact Us</a></li>
-                </ul>
-                <div class="subscribtion">
-                  <h4>Avventura</h4>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email address"
-                  />
-                  <button>Subscribe</button>
-                  <p>By Subscribing, you agree to our Privacy Policy</p>
-                  <div class="icons">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <div class="col-lg-3 col-md-6 text-center pt-sm-3 pb-sm-3">
+                  <ul class="links ">
+                    <li class="head">Quick Links</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="subscribtion ">
+                    <h4>Avventura</h4>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter your email address"
+                    />
+                    <button>Subscribe</button>
+                    <p>By Subscribing, you agree to our Privacy Policy</p>
+                    <div class="icons text-center ">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-youtube"></i>
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -234,17 +242,11 @@
         </div>
         <div class="contact pb-4">
           <form action="">
-            <h4>whatsApp</h4>
+            <!-- <h4>whatsApp</h4> -->
             <!-- <label for="number"><span>egypt</span>+20</label> -->
+            <input type="text" class="w-100 pb-4 mb-3" name="name" placeholder="your name">
             <input type="text" class="w-100 pb-4" name="number" placeholder=" phone number">
-            <div class="check row pt-4  justify-content-center align-items-center">
-              <input type="checkbox"id="check"class="col-2"name="yes">
-              <label for="check" class=" col-10">I agree to Linktree's Terms and Conditions and Privacy Notice. <span class="text-black-50">(Required)</span></label>
-            </div>
-            <div class="check row pt-4 justify-content-center align-items-center">
-              <input type="checkbox"id="check"class="col-2"name="yes">
-              <label for="check" class=" col-10">I agree to my contact details being shared with HideAgency, who may contact me.</label>
-            </div>
+            
             <button type="submit" class=" rounded-pill w-100">Subscribe</button>
           </form>
         </div>
